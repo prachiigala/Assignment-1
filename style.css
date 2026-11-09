@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+  color: rgb(31, 31, 31);
+  font-size: 32px;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.page-content {
+  flex: 1;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+  border-bottom: 1px solid rgba(31, 31, 31, 0.2);
+}
+.header a {
+  text-decoration: none;
+  color: rgb(31, 31, 31);
+}
+.hello sup {
+  font-size: 0.75rem;
+  font-family: "Roboto Mono", monospace;
+}
+nav {
+  font-size: 0.75rem;
+  font-family: "Roboto Mono", monospace;
+}
+nav ul li {
+  display: inline;
+  padding: 0rem 2rem;
+}
+.side_note {
+  font-size: 0.75rem;
+  width: 21vw;
+  font-family: "Roboto Mono", monospace;
+}
+.text {
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-align: justify;
+}
+.portrait {
+  position: absolute;
+  width: 30%;
+  object-fit: cover;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: cell;
+  filter: grayscale(100%);
+  transition: transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.5s ease;
+}
+.portrait:hover {
+  transform: translate(240px, 180px) rotate(-6deg);
+  filter: grayscale(0%);
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  border-top: 1px solid rgba(31, 31, 31, 0.2);
+}
+footer div {
+  margin-top: 55px;
+}
+footer img {
+  width: 12vw;
+}
+.cv_text {
+  font-size: 0.75rem;
+  font-family: "Roboto Mono", monospace;
+}
+.cvportrait {
+  width: 25%;
+}
+section {
+  display: flex;
+  padding: 2rem 8rem;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(31, 31, 31, 0.2);
+}
+section:last-child {
+  border-bottom: none;
+}
+.profile {
+  width: 40vw;
+}
+.location {
+  font-size: 0.75rem;
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+}
+.tools {
+  width: 13%;
+  padding: 10px;
+  transition: transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.tools:hover {
+  transform: translate(10px, 10px) rotate(5deg);
+}
+
+.quote_div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.quote1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-style: italic;
+  text-align: right;
+}
+.quote2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-style: italic;
+  padding-top: 15rem;
+}
+.portrait2 {
+  width: 300px;
+  height: 300px;
+  padding-top: 3rem;
+  filter: grayscale(100%);
+}
+.portrait2:hover {
+  filter: grayscale(0%);
+}
+
+.author {
+  font-size: 0.75rem;
+  font-family: "Roboto Mono", monospace;
+  text-align: left;
+}
+.card_facts {
+  width: 50%;
+  padding: 0rem 20rem;
+}
+.card_carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.card {
+  position: relative;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  background-color: black;
+  color: beige;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  transition: background 0.3s ease;
+}
+.card_div {
+  max-width: 250px;
+  font-size: 0.75rem;
+  font-family: "Roboto Mono", monospace;
+  padding-top: 10rem;
+}
+.card_div li:hover {
+  
+}
+.card:hover {
+  background: #191919;
+}
